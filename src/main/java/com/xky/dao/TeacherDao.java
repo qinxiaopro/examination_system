@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface TeacherDao {
     List<Teacher> selectAllTeacher();
+
+    int insertTeacher(Teacher teacher);
 }

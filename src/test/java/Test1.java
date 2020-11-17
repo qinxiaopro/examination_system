@@ -13,15 +13,22 @@ public class Test1 {
 
     @Autowired
     private TeacherController teacherController;
-//    private TeacherDao teacherDao;
+    @Autowired
+    private TeacherDao teacherDao;
 
     @Test
     public void test() throws Exception{
-//        String layUIAdapter = selectAllTeacher.selectAllTeacher();
-//        System.out.println(layUIAdapter);
         LayUIAdapter layUIAdapter = teacherController.selectAllTeacher();
         System.out.println(layUIAdapter.getData());
 
 
     }
+
+//    @Test
+//    public void test2() throws Exception{
+//        for (int i = 0; i < 400; i++) {
+//            teacherDao.insertTeacher(new Teacher(null,"test+"+i+"","男",i,"234234"+i+"","广西桂林"+i,"img/"+i));
+//        }
+//    }
+
 }

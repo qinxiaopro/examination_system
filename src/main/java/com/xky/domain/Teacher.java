@@ -9,6 +9,20 @@ public class Teacher {
     private String address;
     private String imgPath;
 
+
+    public Teacher() {
+    }
+
+    public Teacher(Integer teacherId, String name, String gender, Integer age, String phone, String address, String imgPath) {
+        this.teacherId = teacherId;
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.phone = phone;
+        this.address = address;
+        this.imgPath = imgPath;
+    }
+
     public Integer getTeacherId() {
         return teacherId;
     }
