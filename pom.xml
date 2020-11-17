@@ -143,15 +143,6 @@
     <build>
         <resources>
             <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                    <include>**/*.properties</include>
-                </includes>
-                <filtering>false</filtering>
-            </resource>
-
-            <resource>
                 <directory>src/test/java</directory>
                 <includes>
                     <include>**/*.xml</include>
@@ -160,6 +151,14 @@
                 <filtering>false</filtering>
             </resource>
 
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
         </resources>
     </build>
 </project>

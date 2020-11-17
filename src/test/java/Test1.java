@@ -12,12 +12,16 @@ import java.util.List;
 public class Test1 {
 
     @Autowired
-    private TeacherController selectAllTeacher;
+    private TeacherController teacherController;
 //    private TeacherDao teacherDao;
 
     @Test
     public void test() throws Exception{
 //        String layUIAdapter = selectAllTeacher.selectAllTeacher();
 //        System.out.println(layUIAdapter);
+        LayUIAdapter layUIAdapter = teacherController.selectAllTeacher();
+        System.out.println(layUIAdapter.getData());
+
+
     }
 }

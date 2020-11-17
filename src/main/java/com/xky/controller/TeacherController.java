@@ -22,7 +22,7 @@ public class TeacherController {
 
     @ResponseBody
     @RequestMapping("/selectAllTeacher")
-    public LayUIAdapter selectAllTeacher(HttpServletResponse response) throws Exception {
+    public LayUIAdapter selectAllTeacher() throws Exception {
         List<Teacher> teachers = teacherService.selectAllTeacher();
         LayUIAdapter<Teacher> layUIAdapter = new LayUIAdapter<>();
         layUIAdapter.setCode(0);
