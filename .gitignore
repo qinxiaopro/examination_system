@@ -1,8 +1,7 @@
 /.idea
 /target
 .iml
-src/main/java/rebel.xml
-src/main/java/rebel-remote.xml
+src/main/java/*.xml
 .DS_Store
 /out
 
