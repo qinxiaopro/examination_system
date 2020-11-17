@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop  http://www.springframework.org/schema/mvc/spring-aop.xsd ">
+
+    <!--    开启 spring 注解扫描-->
+    <context:component-scan base-package="com.xky"/>
+
+
+    <!--    1. 加载 db.properties 文件-->
+    <context:property-placeholder location="classpath:/config/db.properties" system-properties-mode="NEVER"/>
+
+
+    <!-- 2. 配置连接池-->
+    <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="initialSize" value="${initialSize}"/>
+    </bean>
+
+    <!--    3. spring 整合 mybatis
+        配置 SqlSessionFactory, 使用 mybaits 和 spring 整合的桥梁 -->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
+        <!--        要创建连接对象 session 一定要 dataSource -->
+        <property name="dataSource" ref="myDataSource"/>
+
+
+        <property name="configLocation" value="classpath:/config/mybatis-context.xml" />
+
+        <!--            配置别名-->
+        <property name="typeAliasesPackage" value="com.xky.domain"/>
+
+        <!--        加载映射文件-->
+        <property name="mapperLocations" value="classpath:com/xky/mapper/*.xml"/>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--   加入所有的 bean -->
+        <property name="basePackage" value="com.xky.dao"/>
+    </bean>
+
+
+</beans>
