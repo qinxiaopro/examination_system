@@ -13,4 +13,8 @@
         <setting name="lazyLoadTriggerMethods" value="clone"/>
     </settings>
 
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor" />
+    </plugins>
+
 </configuration>

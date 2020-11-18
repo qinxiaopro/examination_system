@@ -10,8 +10,7 @@ import java.util.List;
 
 @Service
 public class TeacherServiceImpl implements TeacherService {
-//     <link rel="stylesheet" href="${pageContext.request.contextPath}/web_resources/web_lib/layui/css/layui.css"/>
-    //            , url: '${pageContext.request.contextPath}/teacher/selectAllTeacher'
+
     @Autowired
     private TeacherDao teacherDao;
 

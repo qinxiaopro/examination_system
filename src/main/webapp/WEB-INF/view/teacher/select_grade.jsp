@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<ul class="layui-nav" >
+<ul class="layui-nav" style="position: fixed;top: 0px; width: 100%; z-index:999">
     <li class="layui-nav-item">
         <a href="">&nbsp;</a>
     </li>
@@ -65,7 +65,7 @@
 </ul>
 
 <!-- 内容 -->
-<div style="margin-left: 210px; margin-top: 10px; width: 1280px; height: 500px">
+<div style="margin-left: 210px; margin-top: 66px; width: 1280px; height: 500px">
 
     <span class="layui-breadcrumb">
         <a href="">首页</a>

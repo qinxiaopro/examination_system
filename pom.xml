@@ -19,6 +19,14 @@
 
 
     <dependencies>
+        <!--pageHelper分页插件-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.10</version>
+        </dependency>
+
+
         <!--  jsp-->
         <dependency>
             <groupId>javax.servlet</groupId>
