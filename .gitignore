@@ -1,6 +1,6 @@
 /.idea
 /target
-.iml
+examination_system.iml
 src/main/java/*.xml
 .DS_Store
 /out
