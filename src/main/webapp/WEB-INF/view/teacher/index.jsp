@@ -7,6 +7,11 @@
 
 <%@include file="nav.jsp"%>
 
+<%
+    System.out.println("hello");
+    response.sendRedirect(request.getContextPath()+"/teacher/notice_ui");
+//    request.getRequestDispatcher(request.getContextPath()+"/")
+%>
 
 </body>
 </html>
