@@ -35,7 +35,7 @@
     </li>
 
     <li class="layui-nav-item layui-nav-itemed">
-        <a href="subject.html">科目管理</a>
+        <a href="${pageContext.request.contextPath}/teacher/subject_ui">科目管理</a>
     </li>
 
     <li class="layui-nav-item">

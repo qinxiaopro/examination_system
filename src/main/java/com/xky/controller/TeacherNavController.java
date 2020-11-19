@@ -38,7 +38,7 @@ public class TeacherNavController {
 
     @RequestMapping("/select_grade_ui")
     public String selectGradeUI() {
-        return "select_grade_temp";
+        return "teacher/select_grade";
     }
 
     @RequestMapping("/select_student_ui")
@@ -54,7 +54,7 @@ public class TeacherNavController {
 
     @RequestMapping("/teacherInfo_ui")
     public String teacherInfoUI() {
-        return "teacher/teacherInfo";
+        return "teacherInfo";
     }
 
 

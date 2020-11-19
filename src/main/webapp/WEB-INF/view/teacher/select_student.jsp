@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <title>导航</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/web_resources/web_lib/layui/css/layui.css"/>
-    <script src="${pageContext.request.contextPath}/web_resources/web_lib/layui/layui.js" />
 </head>
 <body>
 <%@include file="nav.jsp"%>
