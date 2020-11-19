@@ -46,7 +46,8 @@ public class TeacherController {
 
     @RequestMapping("/gradeUI")
     public String gradeUI() {
-        return "teacher/select_grade";
+//        return "teacher/select_grade";
+        return "teacher/notice";
     }
 
 }
