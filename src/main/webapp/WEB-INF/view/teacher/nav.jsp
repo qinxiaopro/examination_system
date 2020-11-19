@@ -63,7 +63,7 @@
     </li>
 
     <li class="layui-nav-item layui-nav-itemed">
-        <a href="${pageContext.request.contextPath}/teacher/select_examinee">查询考生</a>
+        <a href="${pageContext.request.contextPath}/teacher/select_examinee_ui">查询考生</a>
     </li>
 </ul>
 

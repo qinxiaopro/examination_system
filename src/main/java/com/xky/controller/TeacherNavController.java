@@ -54,7 +54,12 @@ public class TeacherNavController {
 
     @RequestMapping("/teacherInfo_ui")
     public String teacherInfoUI() {
-        return "teacherInfo";
+        return "teacher/teacherInfo";
+    }
+
+    @RequestMapping("/update_examination_ui")
+    public String updateExaminationUI() {
+        return "teacher/update_examination";
     }
 
 
@@ -62,5 +67,34 @@ public class TeacherNavController {
     public String updateTeacherInfoUI() {
         return "teacher/update_teacherInfo";
     }
+
+    @RequestMapping("/select_examinee_ui")
+    public String selectExamineeUI() {
+        System.out.println("e");
+        System.out.println("h");
+        return "teacher/select_examinee";
+    }
+
+    @RequestMapping("/subject_ui")
+    public String subjectUi() {
+        return "teacher/subject";
+    }
+
+    @RequestMapping("/delete_examination_ui")
+    public String deleteExaminationUi() {
+        return "teacher/delete_examination";
+    }
+
+    @RequestMapping("/select_examination_ui")
+    public String selectExaminationUi() {
+        return "teacher/select_examination";
+    }
+
+
+    @RequestMapping("/publish_examination_ui")
+    public String publishExaminationUi() {
+        return "teacher/publish_examination";
+    }
+
 
 }
