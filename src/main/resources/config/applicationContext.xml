@@ -16,6 +16,7 @@
     <context:property-placeholder location="classpath:/config/db.properties" system-properties-mode="NEVER"/>
 
 
+
     <!-- 2. 配置连接池-->
     <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}"/>

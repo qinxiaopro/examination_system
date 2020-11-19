@@ -4,8 +4,6 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/web_resources/web_lib/layui/css/layui.css"/>
 </head>
 <body>
-
-
 <ul class="layui-nav" >
     <li class="layui-nav-item">
         <a href="">&nbsp;</a>
@@ -24,13 +22,13 @@
 </ul>
 
 
-<ul class="layui-nav layui-nav-tree layui-inline layui-nav-side" lay-filter="demo" style="margin-right: 20px;  margin-top: 60px">
+<ul class="layui-nav layui-nav-tree layui-inline layui-nav-side" lay-filter="demo" style="margin-right: 20px; margin-top: 60px">
     <li class="layui-nav-item">
         <a href="javascript:;">班级管理</a>
         <dl class="layui-nav-child">
-            <dd><a href="${pageContext.request.contextPath}/WEB-INF/view/teacher/select_student.jsp" >查询学生</a></dd>
+            <dd><a href="${pageContext.request.contextPath}/teacher/select_student" >查询学生</a></dd>
             <dd><a href="select_grade.html">查看成绩</a></dd>
-            <dd><a href="${pageContext.request.contextPath}/WEB-INF/view/teacher/notice.jsp">公告发布</a></dd>
+            <dd><a href="${pageContext.request.contextPath}/teacher/notice">公告发布</a></dd>
         </dl>
     </li>
 
@@ -41,16 +39,16 @@
     <li class="layui-nav-item">
         <a href="javascript:;">试题管理</a>
         <dl class="layui-nav-child">
-            <dd><a href="update_question.html">修改试题</a></dd>
-            <dd><a href="add_question.html">添加试题</a></dd>
-            <dd><a href="my_question.html">我的录题</a></dd>
+            <dd><a href="${pageContext.request.contextPath}/teacher/update_question">修改试题</a></dd>
+            <dd><a href="${pageContext.request.contextPath}/teacher/add_question">添加试题</a></dd>
+            <dd><a href="${pageContext.request.contextPath}/teacher/my_question">我的录题</a></dd>
         </dl>
     </li>
 
     <li class="layui-nav-item">
         <a href="javascript:;">考试管理</a>
         <dl class="layui-nav-child">
-            <dd><a href="add_examination.html">添加考试</a></dd>
+            <dd><a href="${pageContext.request.contextPath}/teacher/add_examination">添加考试</a></dd>
             <dd><a href="update_examination.html">修改考试</a></dd>
             <dd><a href="delete_examination.html">删除考试</a></dd>
             <dd><a href="select_examination.html">查看考试</a></dd>
