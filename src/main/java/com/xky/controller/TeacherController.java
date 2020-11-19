@@ -1,6 +1,5 @@
 package com.xky.controller;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.xky.domain.LayUIAdapter;
@@ -9,11 +8,8 @@ import com.xky.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.servlet.http.HttpServletResponse;
 
 import java.util.List;
 
@@ -47,7 +43,7 @@ public class TeacherController {
     @RequestMapping("/gradeUI")
     public String gradeUI() {
 //        return "teacher/select_grade";
-        return "teacher/notice";
+        return "notice_ui";
     }
 
 }
