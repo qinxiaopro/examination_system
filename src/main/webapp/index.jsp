@@ -5,5 +5,6 @@
 </head>
 <body>
 <a href="${pageContext.request.contextPath}/teacher/index_ui">grade</a>
+<a href="${pageContext.request.contextPath}/student/index_ui">student</a>
 </body>
 </html>
