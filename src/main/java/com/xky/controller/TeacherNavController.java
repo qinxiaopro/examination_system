@@ -17,7 +17,10 @@ public class TeacherNavController {
         return "teacher/index";
     }
 
-
+    @RequestMapping("/examination_ui")
+    public String examination_ui() {
+        return "teacher/manage_examination";
+    }
 
     @RequestMapping("/add_question_ui")
     public String addQuestionUI() {

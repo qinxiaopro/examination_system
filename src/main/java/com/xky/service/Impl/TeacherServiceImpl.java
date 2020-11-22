@@ -1,4 +1,4 @@
-package com.xky.service.iml;
+package com.xky.service.Impl;
 
 import com.xky.dao.TeacherDao;
 import com.xky.domain.Teacher;
