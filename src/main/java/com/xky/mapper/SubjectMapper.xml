@@ -6,4 +6,7 @@
     <select id="selectAllSubject" resultType="Subject">
         select * from subject where available = 1
     </select>
+    <select id="selectSubjectById" resultType="Subject">
+        select * from subject where subjectId= #{id}
+    </select>
 </mapper>

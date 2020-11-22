@@ -1,4 +1,4 @@
-package com.xky.service.iml;
+package com.xky.service.Impl;
 
 import com.xky.dao.SubjectDao;
 import com.xky.domain.Subject;
@@ -16,5 +16,10 @@ public class SubjectServiceImpl implements SubjectService {
     @Override
     public List<Subject> selectAllSubject() {
         return subjectDao.selectAllSubject();
+    }
+
+    @Override
+    public Subject selectSubjectById(Integer id) {
+        return subjectDao.selectSubjectById(id);
     }
 }
