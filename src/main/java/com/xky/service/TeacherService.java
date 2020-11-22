@@ -6,5 +6,4 @@ import java.util.List;
 
 public interface TeacherService {
     List<Teacher> selectAllTeacher();
-
 }

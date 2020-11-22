@@ -70,8 +70,6 @@ public class TeacherNavController {
 
     @RequestMapping("/select_examinee_ui")
     public String selectExamineeUI() {
-        System.out.println("e");
-        System.out.println("h");
         return "teacher/select_examinee";
     }
 
