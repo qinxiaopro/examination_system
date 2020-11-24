@@ -33,6 +33,7 @@ public class ExaminationServiceImpl implements ExaminationService {
             Examination data = list.get(i);
             Subject subject =subjectDao.selectSubjectById(data.getSubjectId());
             data.setSubject(subject);
+            data.setSubjectName(subject.getName());
             list2.add(i,data);
         }
         return list2;
