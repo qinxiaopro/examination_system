@@ -6,15 +6,20 @@ import java.sql.Time;
 public class Examination {
     private Integer examinationId;
     private Integer subjectId;
-    private Subject Subject;
+    private Subject subject;
+    private String subjectName;
     private Date date;
+    private Time startTime;
+    private Time endTime;
+
 
     @Override
     public String toString() {
         return "Examination{" +
                 "examinationId=" + examinationId +
                 ", subjectId=" + subjectId +
-                ", Subject=" + Subject +
+                ", subject=" + subject +
+                ", subjectName='" + subjectName + '\'' +
                 ", date=" + date +
                 ", startTime=" + startTime +
                 ", endTime=" + endTime +
@@ -37,12 +42,20 @@ public class Examination {
         this.subjectId = subjectId;
     }
 
-    public com.xky.domain.Subject getSubject() {
-        return Subject;
+    public Subject getSubject() {
+        return subject;
     }
 
-    public void setSubject(com.xky.domain.Subject subject) {
-        Subject = subject;
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
+
+    public String getSubjectName() {
+        return subjectName;
+    }
+
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
     }
 
     public Date getDate() {
@@ -68,7 +81,4 @@ public class Examination {
     public void setEndTime(Time endTime) {
         this.endTime = endTime;
     }
-
-    private Time startTime;
-    private Time endTime;
 }

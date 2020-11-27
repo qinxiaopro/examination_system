@@ -463,7 +463,7 @@
                 , cols: [[
                     {type: 'checkbox', fixed: 'left'}
                     , {field: 'examinationId', title: 'ID', width: 100, fixed: 'left', unresize: true, sort: true}
-                    , {field: 'subjectId', title: '科目id', width: 120, edit: 'text'}
+                    , {field: 'subjectName', title: '科目名称', width: 120, edit: 'text'}
                     , {
                         field: 'date',
                         title: '开始日期',
