@@ -54,19 +54,7 @@
             </fieldset>
             <div id="test4" class="demo-transfer"></div>
         </div>
-
-
-
-
-
     </form>
-
-
-
-
-
-
-
 
 </div>
 

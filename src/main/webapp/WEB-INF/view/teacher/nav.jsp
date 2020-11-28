@@ -49,18 +49,18 @@
     </li>
 
     <li class="layui-nav-item">
-        <a href="javascript:;">考试管理</a>
-        <dl class="layui-nav-child">
-            <%--            <dd><a href="${pageContext.request.contextPath}/teacher/add_examination_ui">添加考试</a></dd>--%>
-            <dd><a href="${pageContext.request.contextPath}/teacher/examination_ui">操作</a></dd>
+        <a href="${pageContext.request.contextPath}/teacher/examination_ui">考试管理</a>
+<%--        <dl class="layui-nav-child">--%>
+<%--            &lt;%&ndash;            <dd><a href="${pageContext.request.contextPath}/teacher/add_examination_ui">添加考试</a></dd>&ndash;%&gt;--%>
+<%--            <dd><a href="${pageContext.request.contextPath}/teacher/examination_ui">操作</a></dd>--%>
 
 
-            <%--            <dd><a href="${pageContext.request.contextPath}/teacher/update_examination_ui">修改考试</a></dd>--%>
-            <%--            <dd><a href="${pageContext.request.contextPath}/teacher/delete_examination_ui">删除考试</a></dd>--%>
-            <%--            <dd><a href="${pageContext.request.contextPath}/teacher/select_examination_ui">查看考试</a></dd>--%>
-            <%--            <dd><a href="${pageContext.request.contextPath}/teacher/publish_examination_ui">发布考试</a></dd>--%>
+<%--            &lt;%&ndash;            <dd><a href="${pageContext.request.contextPath}/teacher/update_examination_ui">修改考试</a></dd>&ndash;%&gt;--%>
+<%--            &lt;%&ndash;            <dd><a href="${pageContext.request.contextPath}/teacher/delete_examination_ui">删除考试</a></dd>&ndash;%&gt;--%>
+<%--            &lt;%&ndash;            <dd><a href="${pageContext.request.contextPath}/teacher/select_examination_ui">查看考试</a></dd>&ndash;%&gt;--%>
+<%--            &lt;%&ndash;            <dd><a href="${pageContext.request.contextPath}/teacher/publish_examination_ui">发布考试</a></dd>&ndash;%&gt;--%>
 
-        </dl>
+<%--        </dl>--%>
     </li>
 
     <li class="layui-nav-item layui-nav-itemed">

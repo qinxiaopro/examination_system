@@ -35,8 +35,4 @@ public class ExaminationController {
         layUIAdapter.setMsg("ok");
         return layUIAdapter;
     }
-    @RequestMapping("index")
-    public void show(){
-        System.out.println("kkkkkkkkk");
-    }
 }

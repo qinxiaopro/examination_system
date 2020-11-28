@@ -6,4 +6,6 @@
     <select id="selectAllExamination" resultType="Examination">
         select * from examination
     </select>
+
+
 </mapper>

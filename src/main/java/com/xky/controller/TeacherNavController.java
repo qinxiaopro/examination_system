@@ -1,11 +1,22 @@
 package com.xky.controller;
 
+import com.xky.dao.TeacherDao;
+import com.xky.domain.QuestionBank;
+import com.xky.domain.Teacher;
+import com.xky.service.TeacherService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/teacher")
 public class TeacherNavController {
+
+    @Autowired
+    private TeacherService teacherService;
 
     @RequestMapping("/add_examination_ui")
     public String addExaminationUI() {
@@ -29,7 +40,10 @@ public class TeacherNavController {
 
 
     @RequestMapping("/my_question_ui")
-    public String myQuestionUI() {
+    public String myQuestionUI(Model model) {
+
+
+
         return "teacher/my_question";
     }
 

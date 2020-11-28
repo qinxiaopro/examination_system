@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-<%@include file="nav.jsp"%>
+<%@include file="nav.jsp" %>
 
 <!-- 内容 -->
 <div style="margin-left: 210px; margin-top: 10px; ">
@@ -73,7 +73,24 @@
     </script>
 </div>
 </body>
+<script src="${pageContext.request.contextPath}/web_resources/web_lib/jquery.min.js"></script>
+
 <script>
+
+    <%--$(function () {--%>
+    <%--    $.ajax({--%>
+    <%--        url: "${pageContext.request.contextPath}/teahcer/currentTeacherQuestionBank",--%>
+    <%--        type: 'POST',--%>
+    <%--        dataType: 'json',--%>
+    <%--        async: false,--%>
+    <%--        data:{},--%>
+    <%--        success:function (data){--%>
+    <%--            --%>
+    <%--        }--%>
+    <%--    })--%>
+    <%--})--%>
+
+
     layui.use('element', function () {
         var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
         //监听导航点击
@@ -99,7 +116,7 @@
 
         table.render({
             elem: '#test'
-            , url: '/test/table/demo1.json'
+            , url: "${pageContext.request.contextPath}/teacher/currentTeacherQuestionBank"
             , toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
             , defaultToolbar: ['filter', 'exports', 'print', { //自定义头部工具栏右侧图标。如无需自定义，去除该参数即可
                 title: '提示'
@@ -109,13 +126,10 @@
             , title: '用户数据表'
             , cols: [[
                 {type: 'checkbox', fixed: 'left'}
-                , {field: 'id', title: 'ID', width: 80, fixed: 'left', unresize: true, sort: true, width: 120}
-                , {field: 'username', title: '试题id', width: 120, edit: 'text'}
-                , {
-                    field: 'email', title: '题库id', width: 150, edit: 'text', templet: function (res) {
-                        return '<em>' + res.email + '</em>'
-                    }
-                }
+                , {field: 'questionBankId', title: '题库id', width: 80, fixed: 'left', unresize: true, sort: true, width: 120}
+                , {field: 'question', title: '题目', width: 300, edit: 'text'}
+                , {field: 'type', title: '类型', width: 100, edit: 'text'}
+                , {field: 'subjectId', title: '科目', width: 100, edit: 'text'}
                 , {fixed: 'right', title: '操作', toolbar: '#barDemo', width: 150}
             ]]
             , page: true
@@ -168,13 +182,13 @@
         });
     });
 
-    layui.use('laypage', function () {
-        var laypage = layui.laypage;
-        //执行一个laypage实例
-        laypage.render({
-            elem: 'test1' //注意，这里的 test1 是 ID，不用加 # 号
-            , count: 50 //数据总数，从服务端得到
-        });
-    });
+    // layui.use('laypage', function () {
+    //     var laypage = layui.laypage;
+    //     //执行一个laypage实例
+    //     laypage.render({
+    //         elem: '' //注意，这里的 test1 是 ID，不用加 # 号
+    //         , count: 50 //数据总数，从服务端得到
+    //     });
+    // });
 </script>
 </html>
